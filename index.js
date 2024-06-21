@@ -1,373 +1,219 @@
-// Massiv metodlariga oid masalalar
-
-// 1-masalasi
+// 1-masala
 
 
-// function extractMiddleThree(arr) {
-   
-//     let len = arr.length;
-
-//     if (len < 3) {
+// function a (arr) {
+//     const b = arr.length;
+//     if (b < 3) {
 //         return null;
 //     }
-  
-//     let startIndex = Math.floor(len / 2) - 1;
-//     let endIndex = startIndex + 3;
-//     let middleThree = arr.slice(startIndex, endIndex);
-
-//     return middleThree;
+//     const x = Math.floor(b / 2); 
+//     const s = x - 1; 
+//     const d = x + 2;
+//     const m = arr.slice(s, d);
+//     return m;
 // }
+// const array1 = [1, 2, 3, 4, 40, 100, 200];
+// console.log(a(array1)); 
 
-// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// 2- masalla
 
-// console.log(extractMiddleThree(myArray)); 
-
-
-
-// 2-masala
-
-
-// function addValuesAtIndex(arr, numValues, startIndex) {
-  
-//     var randomNum = Math.floor(Math.random() * 90 + 10);
-
-//     for (let i = 0; i < numValues; i++) {
-//         arr.splice(startIndex + i, 0, randomNum);
+// function a(arr, n, index) {
+//     const l = arr.length;
+//     function g() {
+//         return Math.floor(Math.random() * 50 ); 
 //     }
-
+//     for (let i = 0; i < n; i++) {
+//         const random = g();
+//         arr.splice(index + i, 0, random);
+//     }
 //     return arr;
 // }
-
-// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-// let newArray = addValuesAtIndex(myArray, 2, 3);
-
-// console.log(newArray); 
+// const array = [1, 2, 3, 4, 5];
+// const k = 3;
+// const s = 2;
+// console.log(a(array, k, s));
 
 
+// 3- masalla
 
-// 3-masalasi
-
-
-// function mergeArrays(arr1, arr2, arr3) {
-   
-//     let mergedArray = arr1.concat(arr3, arr2);
-
-//     return mergedArray;
+// function a(arr1, arr2, arr3) {
+//     const b = [ arr2, arr3, arr1,];
+//     return b;
 // }
 
+// const a1 = [1, 2, 3];
+// const a2 = [4, 5, 6];
+// const a3 = [7, 8, 9];
 
-// let array1 = [1, 2, 3];
-// let array2 = [4, 5, 6];
-// let array3 = [7, 8, 9];
-
-
-// let mergedResult = mergeArrays(array1, array2, array3);
-
-
-// console.log(mergedResult); 
+// console.log(a(a1, a2, a3));
 
 
 
-// 4-masala
+// 4-masalla
 
-
-
-// function findIndexCube(arr, value) {
-  
-//     let index = arr.indexOf(value);
-
-//     if (index !== -1) {
-//         return index ** 3;
+// function a(m, q) {
+//     const index = m.indexOf(q);
+//     if (index == 1) {
+//         return Math.pop(index, 3);
 //     } else {
 //         return false;
 //     }
 // }
+// let n = [1, 2, 3, 4, 5];
+// let v = 3;
+// let d = a(n, v);
+// console.log(d); 
+// d = a(n, v);
+// console.log(d); 
 
-// let myArray = [1, 4, 9, 16, 25];
+// 5- masalla
 
-// let result1 = findIndexCube(myArray, 16);
-// let result2 = findIndexCube(myArray, 8); 
-
-// console.log(result1); 
-// console.log(result2); 
-
-
-
-// 5-masala
-
-
-// function findLastIndex(arr, value) {
-
-//     let lastIndex = arr.lastIndexOf(value);
-
-//     return lastIndex;
+// function a(arr, t) {
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         if (arr[i] === t) {
+//             return i;
+//         }
+//     }
 // }
-
-// let myArray = [1, 2, 3, 4, 3, 2, 1];
-
-// let result1 = findLastIndex(myArray, 3); 
-// let result2 = findLastIndex(myArray, 5); 
-
-
-// console.log(result1); 
-// console.log(result2); 
+// const arr = [2, 12, 6, 4, 10, 8];
+// const b = 8;
+// const d = a(arr, b);
+// console.log(d);
 
 
-// 6-masala
+// 6- masalla
 
-
-// function checkValueInArrays(arr1, arr2, value) {
-    
-//     let combinedArray = arr1.concat(arr2);
-
-    
-//     let isInBothArrays = combinedArray.indexOf(value) !== -1;
-
-//     return isInBothArrays;
+// function a(massiv1, massiv2, element) {
+//     const m = massiv1.includes(element);
+//     const b = massiv2.includes(element);
+//     if (m && b) {
+//         return true;
+//     } else {
+//         return false;
+//     }
 // }
+// const massiv1 = [1, 2, 3, 4, 5];
+// const massiv2 = [6, 7, 8, 9, 10];
+// const element = 3;
+// const natija = a(massiv1, massiv2, element);
+// console.log(natija); 
 
 
-// let array1 = [1, 2, 3];
-// let array2 = [4, 5, 6];
-// let valueToFind = 3;
+// 7- masalla
 
-
-// let result1 = checkValueInArrays(array1, array2, valueToFind); 
-
-
-// let result2 = checkValueInArrays(array1, array2, 8); 
-
-// console.log(result1);
-// console.log(result2);
-
-
-
-// 7-masala
-
-
-// function checkIfValueExists(arr, value) {
-    
-//     let exists = arr.includes(value);
-
-//     return exists;
+// function a(b, e) {
+//     return b.includes(e);
 // }
+// let test = [1, 2, 3, 4, 5];
+// let tests = 3;
+// console.log(a(test, tests));
 
+// 8- masala
 
-// let myArray = [1, 2, 3, 4, 5];
-
-
-// let result1 = checkIfValueExists(myArray, 3);
-// let result2 = checkIfValueExists(myArray, 6); 
-
-// console.log(result1); 
-// console.log(result2); 
-
-
-
-// 8-masala
-
-
-// function findAverageOfThreeDigitNumbers(arr) {
+// function a(arr) {
+//     let sum = 0;
 //     let count = 0;
-//     let sum = 0; 
-
-
-//     arr.forEach(function(number) {
-
-//         if (number >= 100 && number <= 999) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 == 0 && arr[i] >= 100 ) {
+//             sum += arr[i];
 //             count++;
-//             sum += number;
 //         }
-//     });
-
-//     let average = sum / count;
-
-//     return average;
+//     }
+//     if (count === 0) {
+//     }
+//     return sum / count;
 // }
+// const javob = [123, 456, 789, 555, 321];
+// console.log(a(javob));
 
-// let myArray = [123, 45, 678, 321, 987, 234, 567];
-
-// let result = findAverageOfThreeDigitNumbers(myArray);
-
-// console.log(result);
+// 9-masalla
 
 
-
-// 9-masala
-
-
-// function transformArray(arr) {
-
-//     let transformedArray = [];
-
-    
-//     transformedArray = arr.map(function(number) {
-//         if (number % 2 === 0) {
-            
-//             return number ** 2;
-//         } else {
-            
-//             return number ** 3;
+// function a(massiv) {
+//     let javob = [];
+//     for (let i = 0; i < massiv.length; i++) {
+//         if (i % 2 === 0) {
+//             javob.push(massiv[i] * massiv[i]);
 //         }
-//     });
-
-//     return transformedArray;
+//     }
+//     return javob;
 // }
+// let b = [1, 2, 3, 4, 5, 6, 7, 8];
+// let t = a(b);
+// console.log(t);
 
+// 10- masalla
 
-// let myArray = [1, 2, 3, 4, 5];
-
-
-// let result = transformArray(myArray);
-
-
-// console.log(result); 
-
-
-
-// 10-masala
-
-
-// function getLastCharacters(arr) {
-    
-//     let lastCharacters = [];
-
-
-//     lastCharacters = arr.map(function(text) {
-//         return text.slice(-1); 
-//     });
-
-//     return lastCharacters;
+// function a(massiv) {
+//     return massiv.map(yozuv => yozuv.slice(-1));
 // }
+// const t = ["salom", "kurishguncha", "xop"];
+// const b = a(t);
+// console.log(b);
 
+// 11- masalla
 
-// let myArray = ["apple", "banana", "cherry", "date"];
-
-
-// let result = getLastCharacters(myArray);
-
-
-// console.log(result); 
-
-
-
-// 11-masala
-
-
-// function filterShortWords(arr) {
-   
-//     let filteredArray = [];
-
- 
-//     filteredArray = arr.filter(function(word) {
-//         return word.length >= 4; 
-//     });
-
-//     return filteredArray;
+// function a(arr) {
+//     return arr.filter(array => array.length < 4);
 // }
+// const c = ["behi", "banana", "ot", "tok", "soat", "oqish"];
+// const d = a(c);
+// console.log(d);
+
+// 12-masalla
 
 
-// let myArray = ["apple", "pear", "banana", "kiwi", "orange", "fig"];
+// function a(arr) {
+//     return arr.some(obj => obj.age > 18);
+//   }
+//   const c = [
+//     { name: 'Jamshid', age: 25 },
+//     { name: 'Abos', age: 20 },
+//     { name: 'Javohir', age: 17 }
+//   ];
+  
+//   console.log(a(c));
 
 
-// let result = filterShortWords(myArray);
+// 13- masalla
+
+// function a(b) {
+//     return b.every( b => ("jon"));
+//   }
+//   const ismlar1 = ["Azamat", "shaxlo", "Rustam", "Shoxijaxon"];
+  
+//   console.log(a(ismlar1));
+
+// 14- masalla
 
 
-// console.log(result);
+// function a(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] >= 100 && arr[i] % 5 === 0) {
+//         return arr[i];
+//       }
+//     }
+//   }
+//   const array = [235, 120, 375, 430, 240];
+//   const b = a(array);
+//   console.log(b);
 
 
-// 12-masala
+
+// 15- masalla
 
 
-// function checkAdult(arr) {
- 
-//     let hasAdult = arr.some(function(person) {
-//         return person.age >= 18;
-//     });
-
-//     return hasAdult;
+// function a(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].includes('bek')) {
+//             return i;
+//         }
+//     }
+//     return -1; 
 // }
-
-
-// let people = [
-//     { name: "John", age: 25 },
-//     { name: "Jane", age: 17 },
-//     { name: "Doe", age: 20 }
-// ];
-
-// let result = checkAdult(people);
-
-
-// console.log(result);
-
-
-// 13-masala
-
-
-// function checkAllNamesEndWithJon(arr) {
-    
-//     let allEndWithJon = arr.every(function(name) {
-//         return name.endsWith("jon"); 
-//     });
-
-//     return allEndWithJon;
-// }
-
-
-// let names = ["Marjon", "Anvarjon", "Sarvinoz", "Farruxjon"];
-
-
-// let result = checkAllNamesEndWithJon(names);
-
-
-// console.log(result); 
-
-
-// 14-masala
-
-
-// function findThreeDigitMultipleOfFive(arr) {
-//     let foundNumber = arr.find(function(number) {
-//         return number >= 100 && number <= 999 && number % 5 === 0;
-//     });
-
-//     return foundNumber;
-// }
-
-// let numbers = [245, 132, 510, 879, 305, 724];
-
-// let result = findThreeDigitMultipleOfFive(numbers);
-
-// console.log(result); 
-
-
-// 15-masala
-
-
-// function findIndexContainingBek(arr) {
- 
-//     let index = arr.findIndex(function(name) {
-//         return name.includes("bek"); 
-//     });
-
-//     return index;
-// }
-
-
-// let names = ["Abdulloh", "Bekzod", "Sarvarbek", "Bektur", "Murod"];
-
-
-// let result = findIndexContainingBek(names);
-
-
-// console.log(result); 
-
-
-// let noBekNames = ["Abdulloh", "Sarvar", "Murod"];
-// let noBekResult = findIndexContainingBek(noBekNames);
-// console.log(noBekResult); 
-
+// const c = ["alisher", "holmurod", "azamat", "lazizbek", "omad"];
+// const index = a(c);
+// console.log(index);
 
 // IIFE ga oid 4 ta misol tuzing hamda ularning qanday ishlashini, IIFE ning nega kerakligini izohlang
 
@@ -409,3 +255,4 @@
 //     increment();
 //     increment();
 // })();
+
